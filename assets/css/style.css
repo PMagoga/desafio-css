@@ -157,3 +157,35 @@ footer a {
     text-decoration: none;
     font-weight: bold;
 }
+
+
+/* Para telas menores que 1024px */
+@media (max-width: 1024px) {
+  body {
+    padding: 10px;
+  }
+}
+
+/* Para tablets e telas menores que 768px */
+@media (max-width: 768px) {
+  .container, .main, .section {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Para celulares (menor que 480px) */
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+  nav, .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
